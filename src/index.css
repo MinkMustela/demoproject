@@ -1,0 +1,393 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+.container-box{
+   display: flex;
+   flex-flow: column;
+   justify-content: center;
+   align-items: center;
+   /* width: 100%; */
+   background-color: #F3F3F3;
+  
+ }
+/*Nav styling*/
+nav{
+  position: fixed;
+  top:0;
+  width: 100%;
+  /* margin-bottom: 20px; */
+  z-index: 100; 
+  background: white;
+
+}
+.navbar{
+  /* position:fixed;
+  top: 0;
+  left:0; */
+  background: #FFFFFF;
+  width: 100%;
+ 
+  padding: 10px 0 0 0;
+  box-shadow: 0 4px 10px 0 rgb(0 0 0 / 10%);
+
+}
+.navbar-content-container{
+  /* position: relative; */
+  justify-content: center;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.navbar-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: 0;
+  margin-left: 0;
+  height: 100%;
+}
+.logo{
+  padding:10px 20px;
+  color: #E62E77;
+  justify-content: center;
+  border-right: rgba(66, 12, 71, 0.438) 1px solid;
+}
+.nav-icon{
+  padding: 8px 4px 0 4px;
+  font-size: 35px;
+}
+.brand-logo{
+position: relative;
+top: 50%;
+left:50%;
+transform: translate(-50%,-50%);
+display: flex;
+justify-content: center;
+}
+.logo-content{
+  font-size: 30px;
+  font-weight:bolder;
+  padding-left: 30px;
+}
+.checkout-main-container{
+  flex-grow: 3;
+  display: flex;
+  align-items: center;
+}
+.checkout-container{
+  position: relative;
+  width: 190px;
+  height: 64px;
+  vertical-align: middle;
+  padding: 10px;
+  border-right: rgba(66, 12, 71, 0.438) 1px solid;
+ }
+.checkout-section{
+padding: 5px;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+}
+.checkout-heading{
+color: #49444bd3;
+font-size: 16px;
+font-weight: 600;
+}
+.checkout-info{
+  color: #8c8d94;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 170px;
+}
+/*Main body styling*/
+main{
+  margin-top: 5rem;
+  width: 100%;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+.main-box{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+
+  }
+.home-alert{
+  margin: 10px 20%;
+  display: flex;
+  padding: 10px;
+  background: #E0EDFF;
+  border: #84ace5 1.5px solid;
+  border-radius: 5px;
+  width: 75%;
+  color: #0c3d81;
+}
+.alert-icon{
+  padding-right: 20px;
+  color: #0c3d81;
+  font-size: 20px;
+}
+.pay-detail-box{
+  width: 75%;
+ 
+}
+.payment-title{
+  color: #3F414D;
+  font-weight: bold;
+  padding-bottom: 10px;
+  padding-right:5px ;
+}
+.pay-detail-box-content{
+  display: flex;
+  margin-top: 5px;
+ }
+.pay-method{
+  width: 25%;
+  margin-right: 10px;
+}
+.pay-method-list{
+  margin: 0;
+  padding-left: 5px;
+  background: #fff;;
+  box-shadow: 0 3px 3px 0 rgb(0 0 0 / 10%);
+  /* border-radius: 5px; */
+  }
+.sub-card{
+  cursor: pointer;
+  font-size: 16px;
+  padding: 13px 20px 15px 20px;
+  position: relative;
+  border-bottom: #e0edff8a 2px solid;
+  color: #3F414D;
+  font-weight: bold;
+  width: 100%;
+}
+.sub-card link{
+  color: #3F414D;
+  font-weight: bold;
+  
+}
+.active{
+  color: #E62E77;
+  background:#fff;
+  /* border-radius: 8px; */
+  border-right: #E62E77 5px solid;
+}
+ .pay-detail-content{
+   width: 45%;
+   padding: 5px 15px;
+  
+  height: auto;
+   margin-left: 10px;
+   margin-right: 10px;
+ 
+ }
+ .shipping-details-container{
+  background:#fff;
+  position: relative;
+  width: 25%;
+  /* padding: 5px 15px; */
+ 
+  margin-left: 10px;
+  /* margin-right: 10px; */
+ }
+ .item-detail{
+  padding: 5px 15px;
+ }
+ .shipping-detail{
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 50%;
+   background: #F3F3F3;
+  
+   padding: 5px 15px;
+  /* color: #0000; */
+  box-shadow: 0 3px 3px 0 rgb(0 0 0 / 10%);
+ }
+/* footer styling */
+.footer-bar{
+  margin-top: 50px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 15px 30px 15px;
+  background:#F3F3F3; 
+}
+.footer-content-container{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 0;
+  margin-left: 0;
+  color: #282930b0;
+  font: 14px; 
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.footer-content-box{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 10px;
+  margin: 0 20px;
+}
+.left-padding{
+  margin-left: 16.66%;
+}
+.footer-icon{
+  padding-right: 10px;
+  font-size: 40px;
+}
+.footer-content-list{
+ margin-right: 10px;
+}
+.footer-heading{
+  border-bottom: 1px solid #ebebeb;
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+.footer-para{
+  padding-top: 5px;
+}
+
+
+/* card detail section*/
+.card-container{
+  padding: 15px 10px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background:#fff ;
+  box-shadow: 0 3px 3px 0 rgb(0 0 0 / 10%);
+}
+.card-title{
+  font-size:16px;
+  font-weight: 600;
+  color:#3f414d;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-bottom: #EBEBEB 1px solid;
+
+}
+.card-content-container{
+  padding-top: 20px;
+  padding-right: 10px;
+  margin-right: 10px;
+
+}
+
+.credit-card-number input{
+  font-size: 16px;
+  font-weight: 400;
+  color:   #3f414d;
+  width:100%;
+  padding:5px;
+ border: none;
+ border-bottom: #8c8d94 1px solid;
+}
+.credit-card-number input:focus{
+  outline: none;
+}
+.expiry-detail{
+  display: flex;
+  flex-flow: column;
+ 
+  width: 100%;
+ padding-top:20px ;
+}
+.expiry-title{
+  font-size: 16px;
+  font-weight: 400;
+  color: #3f414d
+}
+.expiry-content{
+  display: flex;
+  justify-content: center;
+}
+.expiry-month input{
+  width: 60%;
+  border: none;
+  border-bottom: #3f414d 1px solid;
+  /* font-size: 16px;
+  font-weight: 400;
+  color: #3f414d */
+  
+}
+.expiry-month input:focus{
+  outline: none;
+}
+.expiry-cvv input{
+  width: 90%;
+  border: none;
+  border-bottom: #3f414d 1px solid;
+  
+}
+.expiry-cvv input:focus{
+  outline: none;
+}
+.expiry-icon{
+  font-size: 30px;
+  font-weight: 400;
+  color: #3f414d;
+  width:50%;
+  align-self: center;
+  
+}
+.expiry-info{
+  font-size: 16px;
+  font-weight: 400;
+  color: #3f414d;
+}
+.checkbox-section{
+  width: 100%;
+  padding: 10px 0;
+}
+.submit-btn button{
+  margin-top: 10px;
+  width:100%;
+  padding: 10px 5px;
+  color:#fff;
+  background-color: #E62E77;
+  font-size: 16px;
+  font-weight: 600;
+  outline: none;
+  border: none;
+
+}
+.submit-btn button:focus{
+  outline: none;
+}
+
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
